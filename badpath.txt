@@ -1,0 +1,24 @@
+"""
+Drew Patrick
+testKitchen
+badpath.txt
+Task: text file for testing:
+ Make sure the correct path is changed.
+ /users/abrick/resources/filename.txt
+"""
+
+PATH = "This shouldn't change"
+
+Path = "This should stay the same"
+
+rx_PATH = "badpath.txt"
+
+Here is another line.
+
+rx path
+
+rxpath
+
+RX path
+
+r_PATH
