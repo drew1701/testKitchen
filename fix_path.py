@@ -7,11 +7,14 @@ Task:
  required path on hills '/users/abrick/resources/filename.txt'
 """
 
+import re
+
 BAD_PATH = r"badpath.txt"
 # BAD_PATH = r"other/badpath1.txt"
 
-with open(BAD_PATH) as r:
-    text = r.read().replace('rx_PATH = "badpath.txt"',
-                            'rx_PATH = "other/badpath.txt"')
-with open(BAD_PATH, "w") as w:
-    w.write(text)
+with open(BAD_PATH) as reader:
+    for line in reader:
+        print(line, end='')
+
+print('\n\nand now the reader object itself\n')
+print(reader)
